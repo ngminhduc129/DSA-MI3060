@@ -1,0 +1,19 @@
+# Bỏ qua các thư mục chứa môi trường ảo (Virtual Environment)
+venv/
+env/
+.venv/
+
+# Bỏ qua các file biên dịch, bộ nhớ đệm tự động của Python
+__pycache__/
+*.pyc
+
+# Bỏ qua file chứa thông tin bảo mật (mật khẩu, API key)
+.env
+
+# Bỏ qua cấu hình riêng của các trình soạn thảo code (như VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Bỏ qua các file log hoặc file hệ thống
+*.log
+.DS_Store
