@@ -120,12 +120,18 @@ class HUST_Nav_App:
         # 3. Vẽ các nút (Tòa nhà) lên trên cùng để không bị đường kẻ đè lên
         for node in self.nodes_data:
             x, y = self.lat_lng_to_pixels(node['lat'], node['lng'])
-            color = "#e31b23" if path and node['id'] in path else "#2c3e50"
-            size = 7 if path and node['id'] in path else 5
             
-            self.canvas.create_oval(x-size, y-size, x+size, y+size, fill=color, outline="white", width=2)
-            self.canvas.create_text(x, y+16, text=node['name'], font=("Arial", 8, "bold" if path and node['id'] in path else "normal"), fill="#333")
-
+            # --- ĐOẠN CODE MỚI THÊM VÀO ĐÂY ---
+            # Kiểm tra nếu tên không chứa chữ "Nga tu" thì mới vẽ hình tròn và in chữ
+            if "Nga tu" not in node['name']:
+                color = "#e31b23" if path and node['id'] in path else "#2c3e50"
+                size = 7 if path and node['id'] in path else 5
+                
+                self.canvas.create_oval(x-size, y-size, x+size, y+size, fill=color, outline="white", width=2)
+                self.canvas.create_text(x, y+16, text=node['name'], 
+                                        font=("Arial", 8, "bold" if path and node['id'] in path else "normal"), 
+                                        fill="#333")
+            # ----------------------------------
     def handle_search(self):
         s_name = self.start_cb.get()
         e_name = self.end_cb.get()
