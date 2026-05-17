@@ -21,7 +21,9 @@
     { "id": 18, "name": "Toa C5", "lat": 21.0062, "lng": 105.8445 },
     { "id": 19, "name": "Toa C4", "lat": 21.0066, "lng": 105.8445 },
     { "id": 20, "name": "Toa C3", "lat": 21.0070, "lng": 105.8445 },
-    { "id": 21, "name": "Cong Dai Co Viet (Cong Bac)", "lat": 21.0080, "lng": 105.8435 }
+    { "id": 21, "name": "Cong Dai Co Viet (Cong Bac)", "lat": 21.0080, "lng": 105.8435 },
+    { "id": 23, "name": "Bia da", "lat": 21.00655, "lng": 105.8435 },
+    { "id": 24, "name": "Ho Tien - D9", "lat": 21.0025, "lng": 105.8438 }
   ],
   "edges": [
     { "from": 5, "to": 6, "weight": 100 },
@@ -50,6 +52,15 @@
     { "from": 15, "to": 16, "weight": 60 },
     { "from": 16, "to": 11, "weight": 150 },
     { "from": 9, "to": 10, "weight": 50 },
-    { "from": 10, "to": 11, "weight": 120 }
+    { "from": 10, "to": 11, "weight": 120 },
+    { "from": 3, "to": 23, "weight": 100 },
+    { "from": 23, "to": 19, "weight": 100 },
+    { "from": 2, "to": 23, "weight": 100 },
+    { "from": 5, "to": 11, "weight": 220 },
+    { "from": 4, "to": 7, "weight": 160 },
+    { "from": 5, "to": 7, "weight": 100 },
+    { "from": 6, "to": 9, "weight": 170 },
+    { "from": 6, "to": 24, "weight": 100 },
+    { "from": 24, "to": 11, "weight": 70 }
   ]
 }
