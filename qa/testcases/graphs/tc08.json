@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": 2,
+      "name": "Node 2"
+    },
+    {
+      "id": 20,
+      "name": "Node 20"
+    },
+    {
+      "id": 19,
+      "name": "Node 19"
+    },
+    {
+      "id": 23,
+      "name": "Node 23"
+    },
+    {
+      "id": 3,
+      "name": "Node 3"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 20,
+      "weight": 100
+    },
+    {
+      "from": 20,
+      "to": 19,
+      "weight": 40
+    },
+    {
+      "from": 2,
+      "to": 23,
+      "weight": 100
+    },
+    {
+      "from": 23,
+      "to": 19,
+      "weight": 100
+    },
+    {
+      "from": 3,
+      "to": 23,
+      "weight": 50
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "weight": 100
+    }
+  ]
+}

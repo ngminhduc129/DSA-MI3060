@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {
+      "id": 5,
+      "name": "Node 5"
+    },
+    {
+      "id": 1,
+      "name": "Node 1"
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 5,
+      "weight": 250
+    }
+  ]
+}
