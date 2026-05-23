@@ -1,0 +1,16 @@
+﻿ID,Group,Description,GraphFile,Source,Destination,ExpectedPath,ExpectedDistance,CheckPath,Note
+TC01,Happy path,Đường ngắn nhất cùng khu C,tc01.json,1,21,1 → 13 → 3 → 2 → 21,300,Yes,
+TC02,Happy path,Qua khu C đến cổng Trần Đại Nghĩa,tc02.json,21,12,21 → 2 → 20 → 19 → 22 → 4 → 12,360,Yes,
+TC03,Happy path,Thư viện đến tòa D9 khi có cạnh trực tiếp,tc03.json,5,11,5 → 11,220,Yes,
+TC04,Happy path,Cổng Parabol đến tòa D9,tc04.json,1,11,1 → 5 → 11,470,Yes,
+TC05,Happy path,Đường dài nhiều chặng qua khu C và khu D,tc05.json,21,16,21 → 2 → 20 → 19 → 18 → 17 → 5 → 6 → 15 → 16,610,Yes,
+TC06,Edge case,Source trùng destination,tc06.json,5,5,5,0,Yes,Trường hợp đặc biệt: source trùng destination nên distance = 0 và path chỉ gồm một node.
+TC07,Edge case,"Đồ thị không liên thông, node đích bị cô lập",tc07.json,1,99,,inf,No,Chỉ kiểm tra distance = inf/path rỗng; không bắt buộc exact path.
+TC08,Edge case,Kiểm tra đường đi gần khu Bia đá khi có node 23,tc08.json,2,19,2 → 20 → 19,140,Yes,Đường ngắn nhất phải là 2 -> 20 -> 19 với distance = 140; đường qua node 23 dài hơn nên không được chọn.
+TC09,Edge case,Kiểm tra đường đi qua ngã tư Hồ Tiền - D9 khi có node 24,tc09.json,6,11,6 → 24 → 11,170,Yes,Đường ngắn nhất phải là 6 -> 24 -> 11 với distance = 170; các đường qua 15-16 hoặc 9-10 đều dài hơn.
+TC10,Error case,Node đích không tồn tại,tc10.json,1,999,,inf,No,Không được crash khi node đích không tồn tại; kết quả kỳ vọng là không tìm thấy đường đi.
+TC11,Error case,Node nguồn không tồn tại,tc11.json,999,1,,inf,No,Không được crash khi node nguồn không tồn tại; kết quả kỳ vọng là không tìm thấy đường đi.
+TC12,Error case,Source và destination nằm ở hai thành phần liên thông khác nhau,tc12.json,1,4,,inf,No,Không có đường đi
+TC13,Edge case,Có nhiều đường ngắn nhất bằng nhau,tc13.json,1,4,1 → 2 → 4 | 1 → 3 → 4,4,Multiple,Chấp nhận một trong hai path ngắn nhất: 1 -> 2 -> 4 hoặc 1 -> 3 -> 4.
+TC14,Edge case,"Đồ thị có chu trình, vẫn phải chọn đường ngắn nhất",tc14.json,1,4,1 → 2 → 3 → 4,3,Yes,
+TC15,Edge case,"Có cạnh trùng cặp khác trọng số, chọn trọng số tốt hơn",tc15.json,1,3,1 → 2 → 3,5,Yes,Giữa 1 và 2 có hai cạnh khác trọng số; đường ngắn nhất phải dùng cạnh có weight nhỏ hơn.

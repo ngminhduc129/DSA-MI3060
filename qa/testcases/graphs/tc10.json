@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Node 1"
+    },
+    {
+      "id": 13,
+      "name": "Node 13"
+    },
+    {
+      "id": 3,
+      "name": "Node 3"
+    },
+    {
+      "id": 2,
+      "name": "Node 2"
+    },
+    {
+      "id": 21,
+      "name": "Node 21"
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 13,
+      "weight": 100
+    },
+    {
+      "from": 13,
+      "to": 3,
+      "weight": 50
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "weight": 100
+    },
+    {
+      "from": 2,
+      "to": 21,
+      "weight": 50
+    }
+  ]
+}

@@ -1,3 +1,6 @@
+import json
+from MinHeap_Graph import Graph
+
 def load_data(file_path="map_data.json"):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
