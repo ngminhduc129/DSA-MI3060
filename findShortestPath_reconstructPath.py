@@ -61,14 +61,3 @@ def reconstructPath(prev, destination):            #Lưu vết đường đi
     path.reverse()
     return path
 
-if __name__ == "__main__":
-    graph = MinHeap_Graph.Graph()
-    graph.addEdge("A", "B", 1)
-    graph.addEdge("A", "C", 4)
-    graph.addEdge("B", "C", 2)
-    graph.addEdge("B", "D", 5)
-    graph.addEdge("C", "D", 1)
-
-    result = findShortestPath(graph, "A", "D")
-    print(f"Shortest distance from A to D: {result['distance']}")
-    print(f"Path from A to D: {' -> '.join(result['path'])}")

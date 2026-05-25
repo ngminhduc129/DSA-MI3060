@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import json
-from loaddata import load_data
+from loadData import load_data
 from MinHeap_Graph import Graph
 from findShortestPath_reconstructPath import findShortestPath
 

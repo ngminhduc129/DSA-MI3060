@@ -51,11 +51,11 @@ PROJECT_LOADER = None
 LOADER_NAME = "manual Graph.addEdge fallback"
 
 try:
-    from load_data import load_data as PROJECT_LOADER  # type: ignore
+    from loadData import load_data as PROJECT_LOADER  # type: ignore
     LOADER_NAME = "load_data"
 except Exception:
     try:
-        from load_data import loadData as PROJECT_LOADER  # type: ignore
+        from loadData import loadData as PROJECT_LOADER  # type: ignore
         LOADER_NAME = "loadData from load_data.py"
     except Exception:
         try:
