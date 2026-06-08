@@ -1,5 +1,5 @@
 import json
-from loadata import load_data
+from loaddata import load_data
 from MinHeap_Graph import Graph
 from findShortestPath_reconstructPath import findShortestPath
 
