@@ -40,13 +40,11 @@ def load_data(file_path="map_data.json"):
         print("Lỗi: File JSON bị sai định dạng cú pháp!")
         return None, None
     
-
+if __name__ == "__main__":
     # Gọi hàm để chạy thử
-graph, nodes = load_data("./map_data.json")
-
-# Nếu chạy thành công thì in thử ra để kiểm tra
-if graph:
-    print("--- ĐÃ TẢI DỮ LIỆU THÀNH CÔNG ---")
-    print(f"Số lượng tòa nhà: {len(nodes)}")
-    for node_id, neighbors in graph.items():
-     print(f"Điểm {node_id} nối với: {neighbors}")
+    graph, nodes = load_data("map_data.json")
+    # Nếu chạy thành công thì in thử ra để kiểm tra
+    if graph:
+        print(f"Đã tải {len(nodes)} địa điểm.")
+        for node_id, neighbors in graph.items():
+            print(f"{node_id}: {neighbors}")
