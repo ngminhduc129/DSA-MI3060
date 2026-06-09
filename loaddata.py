@@ -1,6 +1,6 @@
 import json
 
-def load_data(file_path="map_data.json"):
+def load_data(file_path="data/map_data.json"):
     """
     Hàm đọc dữ liệu từ file JSON và chuyển đổi thành cấu trúc đồ thị (Danh sách kề).
     Trả về: (graph, nodes_list)
