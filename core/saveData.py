@@ -1,6 +1,6 @@
 def saveData(filename, start_node, end_node, result):
     try:
-        with open(filename, 'w', encoding='utf-8') as f:
+        with open(f"data/{filename}", 'w', encoding='utf-8') as f:
             f.write("=== KẾT QUẢ TÌM ĐƯỜNG HUST ===\n")
             f.write(f"Điểm đi: {start_node}\n")
             f.write(f"Điểm đến: {end_node}\n")
