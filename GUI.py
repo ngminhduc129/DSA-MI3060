@@ -3,8 +3,8 @@ from tkinter import ttk, messagebox
 import json
 import heapq
 from loaddata import load_data
-from MinHeap_Graph import Graph
-from findShortestPath_reconstructPath import findShortestPath
+from core.MinHeap_Graph import Graph
+from core.findShortestPath_reconstructPath import findShortestPath
 from PIL import Image, ImageTk
 
 def saveData(filename, start_node, end_node, result):
