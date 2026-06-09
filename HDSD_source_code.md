@@ -9,6 +9,7 @@ Yêu cầu:
 
   * `Pillow`: dùng cho GUI
   * `matplotlib`: dùng cho script vẽ biểu đồ hiệu năng
+  * `tkinter`: dùng để xây dựng giao diện GUI
 
 Cài đặt:
 
@@ -28,34 +29,79 @@ DSA-MI3060/
 │   ├── MinHeap_Graph.py
 │   ├── findShortestPath_reconstructPath.py
 │   └── saveData.py
+│
 ├── data/
 │   ├── map_data.json
 │   ├── danh_sach_ke.json
 │   └── history_search.txt
+│
 ├── qa/
 │   ├── testcases/
+│   │   ├── test_cases_dijkstra.csv
+│   │   └── graphs/
+│   │       └── *.json
+│   │
 │   ├── data_large/
+│   │   └── graph_*.json
+│   │
 │   ├── scripts/
+│   │   ├── run_qa_test_cases.py
+│   │   ├── generate_large_graphs.py
+│   │   ├── run_performance_test.py
+│   │   ├── check_results.py
+│   │   └── draw_performance_chart.py
+│   │
 │   ├── results/
+│   │   ├── functional_test_results.csv
+│   │   ├── large_graph_summary.csv
+│   │   └── performance_results.csv
+│   │
 │   ├── bug_reports/
-│   └── charts/
+│   │   └── bug_report.md
+│   │
+│   ├── charts/
+│   │   ├── dijkstra_performance.png
+│   │   ├── dijkstra_performance.pdf
+│   │   └── dijkstra_performance_log.png
+│   │
+│   ├── qa_descriptions.md
+│   └── qa_summary.md
+│
 ├── main.py
 ├── GUI.py
 ├── loaddata.py
+├── mangluoi.py
+├── vebando.py
 ├── hust_map.png
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 Các thành phần chính:
 
-| Thành phần                                 | Vai trò                               |
-| ------------------------------------------ | ------------------------------------- |
-| `core/MinHeap_Graph.py`                    | Cài đặt `Graph` và `MinHeap`          |
-| `core/findShortestPath_reconstructPath.py` | Cài đặt Dijkstra và truy vết đường đi |
-| `data/map_data.json`                       | Dữ liệu bản đồ HUST                   |
-| `main.py`                                  | Chạy chương trình dạng console        |
-| `GUI.py`                                   | Chạy chương trình có giao diện        |
-| `qa/`                                      | Bộ kiểm thử chức năng và hiệu năng    |
+| Thành phần                                 | Vai trò                                                            |
+| ------------------------------------------ | ------------------------------------------------------------------ |
+| `core/MinHeap_Graph.py`                    | Cài đặt `Graph` và `MinHeap` dùng cho thuật toán                   |
+| `core/findShortestPath_reconstructPath.py` | Cài đặt Dijkstra và truy vết đường đi ngắn nhất                    |
+| `core/saveData.py`                         | Lưu kết quả tìm đường                                              |
+| `data/map_data.json`                       | Dữ liệu bản đồ HUST chính, gồm danh sách đỉnh và cạnh              |
+| `data/danh_sach_ke.json`                   | Dữ liệu danh sách kề được sinh từ bản đồ                           |
+| `data/history_search.txt`                  | Lưu lịch sử / kết quả tìm kiếm                                     |
+| `main.py`                                  | Chạy chương trình ở chế độ console                                 |
+| `GUI.py`                                   | Chạy chương trình ở chế độ giao diện đồ họa bằng `tkinter`         |
+| `loaddata.py`                              | Đọc dữ liệu bản đồ từ file JSON                                    |
+| `mangluoi.py`                              | Script phụ để trực quan hóa / kiểm tra mạng lưới bản đồ            |
+| `vebando.py`                               | Script phụ để sinh danh sách kề từ dữ liệu bản đồ                  |
+| `hust_map.png`                             | Ảnh nền bản đồ dùng cho GUI                                        |
+| `qa/testcases/`                            | Bộ test case chức năng cho thuật toán Dijkstra                     |
+| `qa/data_large/`                           | Dữ liệu graph lớn dùng cho performance test                        |
+| `qa/scripts/`                              | Các script chạy test, sinh dữ liệu, tổng hợp kết quả và vẽ biểu đồ |
+| `qa/results/`                              | Kết quả functional test và performance test                        |
+| `qa/bug_reports/`                          | Báo cáo lỗi sau khi tổng hợp kết quả test                          |
+| `qa/charts/`                               | Biểu đồ hiệu năng của thuật toán                                   |
+| `qa/qa_descriptions.md`                    | Mô tả chi tiết bộ kiểm thử QA                                      |
+| `qa/qa_summary.md`                         | Tóm tắt kết quả kiểm thử QA                                        |
+| `.gitignore`                               | Khai báo các file/thư mục không đưa vào Git                        |
 
 ---
 
