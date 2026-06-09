@@ -2,7 +2,7 @@ import json
 import matplotlib.pyplot as plt
 
 # 1. Đọc dữ liệu từ file JSON
-with open('map_data.json', 'r', encoding='utf-8') as f:
+with open('data/map_data.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # Tạo từ điển để tra cứu tọa độ nhanh
