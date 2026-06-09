@@ -1,5 +1,3 @@
----
-
 ## Hướng dẫn sử dụng mã nguồn và kiểm thử chương trình
 
 ### 1. Mục đích
