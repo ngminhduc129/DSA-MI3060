@@ -1,8 +1,7 @@
 import json
 from loaddata import load_data
-from core.MinHeap_Graph import Graph
-from core.findShortestPath_reconstructPath import findShortestPath
-
+from MinHeap_Graph import Graph
+from findShortestPath_reconstructPath import findShortestPath
 
 def main():
     print("  HỆ THỐNG TÌM ĐƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI")
@@ -20,7 +19,7 @@ def main():
     for node in nodes_list:
         hust_graph.addNode(node['id'])
 
-    with open('data/map_data.json', 'r', encoding='utf-8') as f:
+    with open('dsa1/CTDL-v--GT-main/map_data.json', 'r', encoding='utf-8') as f:
         edges = json.load(f)['edges']
         for edge in edges:
             hust_graph.addEdge(edge['from'], edge['to'], edge['weight'])
@@ -63,9 +62,12 @@ def main():
 
         except ValueError:
             print("Lỗi: Vui lòng chỉ nhập SỐ (ID) của địa điểm!")
-
+        choice=input("\nNhấn Enter để tiếp tục tìm đường hoặc ấn q để thoát ...")
+        if choice == "q":
+            break
+        elif choice == "":
+            continue
         print("\n" + "=" * 50)
-
 
 if __name__ == "__main__":
     main()
