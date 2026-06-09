@@ -1,4 +1,4 @@
-import MinHeap_Graph
+from . import MinHeap_Graph
 
 def findShortestPath(graph, source, destination):    #source là đỉnh nguồn, destination là đỉnh đích
     #Khởi tạo
