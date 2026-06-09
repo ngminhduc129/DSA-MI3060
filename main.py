@@ -20,7 +20,7 @@ def main():
     for node in nodes_list:
         hust_graph.addNode(node['id'])
 
-    with open('map_data.json', 'r', encoding='utf-8') as f:
+    with open('data/map_data.json', 'r', encoding='utf-8') as f:
         edges = json.load(f)['edges']
         for edge in edges:
             hust_graph.addEdge(edge['from'], edge['to'], edge['weight'])
