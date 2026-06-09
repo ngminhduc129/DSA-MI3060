@@ -1,7 +1,7 @@
 import json
 
 # 1. Đọc dữ liệu từ file map_data.json
-with open('map_data.json', 'r', encoding='utf-8') as f:
+with open('data/map_data.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # 2. Tạo cấu trúc Danh sách kề
