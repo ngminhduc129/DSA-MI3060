@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import json
 import heapq
-from loaddata import load_data
+from data.loaddata import load_data
 from core.MinHeap_Graph import Graph
 from core.findShortestPath_reconstructPath import findShortestPath
 from PIL import Image, ImageTk
