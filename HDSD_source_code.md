@@ -9,7 +9,6 @@ Yêu cầu:
 
   * `Pillow`: dùng cho GUI
   * `matplotlib`: dùng cho script vẽ biểu đồ hiệu năng
-  * `tkinter`: dùng để xây dựng giao diện GUI
 
 Cài đặt:
 
