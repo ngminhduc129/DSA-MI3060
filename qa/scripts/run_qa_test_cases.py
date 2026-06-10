@@ -31,8 +31,8 @@ RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 RESULT_FILE = RESULTS_DIR / "functional_test_results.csv"
 
 try:
-    from MinHeap_Graph import Graph
-    from findShortestPath_reconstructPath import findShortestPath
+    from core.MinHeap_Graph import Graph
+    from core.findShortestPath_reconstructPath import findShortestPath
 except Exception as import_error:
     print("Fatal: Không import được Graph hoặc findShortestPath từ project.")
     print(f"Project root đang nhận diện: {ROOT_DIR}")

@@ -8,7 +8,7 @@ def main():
     print("  HỆ THỐNG TÌM ĐƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI")
     print("  ___________________________________________")
 
-    graph_dict, nodes_list = load_data("map_data.json")
+    graph_dict, nodes_list = load_data("data/map_data.json")
 
     if graph_dict is None or nodes_list is None:
         print("Khởi động thất bại. Vui lòng kiểm tra lại file dữ liệu.")

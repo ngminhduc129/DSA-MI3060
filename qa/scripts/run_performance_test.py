@@ -43,8 +43,8 @@ OUTPUT_CSV = RESULTS_DIR / "performance_results.csv"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(ROOT_DIR))
 
-from MinHeap_Graph import Graph
-from findShortestPath_reconstructPath import findShortestPath
+from core.MinHeap_Graph import Graph
+from core.findShortestPath_reconstructPath import findShortestPath
 
 
 PROJECT_LOADER = None
