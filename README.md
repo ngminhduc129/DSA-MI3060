@@ -1,9 +1,7 @@
 # KẾ HOẠCH DỰ ÁN
 ## Hệ thống Dẫn đường trong Khuôn viên Trường học (Dijkstra)
 
-**Nhóm:** 5 thành viên (Nguyễn Minh Đức và các cộng sự)  
-**Trường:** Đại học Bách Khoa Hà Nội (HUST)  
-**Thời gian:** ~8 tuần | **Deadline:** Tuần đầu tháng 6
+**Nhóm thực hiện:** 5 sinh viên ngành Toán Tin từ Đại học Bách Khoa Hà Nội (HUST)  
 
 ---
 
@@ -64,7 +62,7 @@ Xây dựng hệ thống tìm đường đi ngắn nhất trong khuôn viên tr�
 
 ## 3. Phân công nhóm
 
-### 3.1 Thành viên 1 — Trưởng nhóm / Thiết kế
+### 3.1 Nguyễn Minh Đức — Trưởng nhóm / Thiết kế:
 
 **Vai trò:** Project Manager · Class Diagram · Cấu trúc dữ liệu chính
 
@@ -76,7 +74,7 @@ Xây dựng hệ thống tìm đường đi ngắn nhất trong khuôn viên tr�
 - Tổng hợp phần Phân tích & Thiết kế trong báo cáo.
 - Điều phối quay và dựng video thuyết trình cuối kỳ.
 
-### 3.2 Thành viên 2 — Lập trình viên Core (Thuật toán)
+### 3.2 Dương Tiến Dũng — Lập trình viên Core (Thuật toán) 
 
 **Vai trò:** Cài đặt thuật toán Dijkstra · Logic xử lý chính
 
@@ -89,7 +87,7 @@ Xây dựng hệ thống tìm đường đi ngắn nhất trong khuôn viên tr�
 - Phân tích độ phức tạp thời gian `O((V + E) log V)` và không gian `O(V + E)`.
 - Tạo script `generateLargeGraph(n)` tạo đồ thị ngẫu nhiên.
 
-### 3.3 Thành viên 3 — Lập trình viên Giao diện / Dữ liệu
+### 3.3 Tống Ngọc Kiên — Lập trình viên Giao diện / Dữ liệu
 
 **Vai trò:** Console/GUI · `loadData()` · `saveData()`
 
@@ -101,7 +99,7 @@ Xây dựng hệ thống tìm đường đi ngắn nhất trong khuôn viên tr�
 - Xây dựng giao diện người dùng (Console hoặc GUI).
 - Xử lý lỗi ngoại lệ (file không tồn tại, địa điểm không hợp lệ).
 
-### 3.4 Thành viên 4 — Kiểm thử QA/QC
+### 3.4 Nguyễn Khánh Toàn — Kiểm thử QA/QC
 
 **Vai trò:** Test case · Dữ liệu lớn · Performance test
 
@@ -111,7 +109,7 @@ Xây dựng hệ thống tìm đường đi ngắn nhất trong khuôn viên tr�
 - Thực hiện Performance test: đo thời gian thực thi, lặp 5 lần lấy trung bình.
 - Lập bảng kết quả và vẽ biểu đồ thời gian theo số nút.
 
-### 3.5 Thành viên 5 — Tài liệu / Báo cáo
+### 3.5 Nguyễn Duy Hoàng — Tài liệu / Báo cáo
 
 **Vai trò:** Báo cáo PDF · Big-O · Slide · Video
 
